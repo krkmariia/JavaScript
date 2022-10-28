@@ -10,9 +10,15 @@ console.log(result);
 
 // 2. Напишіть функцію, яка виводить квадрат ( наприклад, із зірочок ), з розмірами, які залежать від глобальної змінної. Приклад для змінної з числом 4 : ( фото ).
 
-let side =  function (b){
-for (let i = 1; i <= b; i ++){
-        document.write('*   *  *   *  *   *  *   *  *   *  *   *  *   *' + '<br>'); 
-} 
+let side = 4;
+let str = '';
+function draw_box(){
+    for (let i = 1; i <= side; i++){
+        for (let j = 1; j <= side; j++){
+            str+= ' * ';
+        }
+        console.log(str);
+        str = '';
+    }
 }
-let square = side(10);
+draw_box();
