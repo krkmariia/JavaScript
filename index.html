@@ -7,10 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="clockHTML"></h1>
-    <button id = "clockCreateAndDelete">Create</button>
-    <h2 id="timerHTML"></h2>
-    <input id="inputForTimer" type="text" name="" placeholder="Введите значение для таймера">
-    <script src="/index.js"></script>
+    <h1>Notes</h1>
+    <input id="inputSearch" type="text" placeholder="Search">
+    <h2></h2>
+    <div id="notes"></div>
+    <input id="inputTitle" placeholder="Write title">
+    <input id="inputText" placeholder="Write text">
+    <button id="btnPost" >Post</button>
+    <input id="inputColor" type="color">
+    <style>
+        .noteBlock{
+            margin-bottom: 10px;
+            border: 2px solid black;
+        }
+        .time{
+            font-size: 14px;
+        }
+        .icon{ 
+            width:32px;
+        }
+    </style>
 </body>
+<script src="/search/search.js"></script>
+<script src="./script.js"></script>
 </html>
